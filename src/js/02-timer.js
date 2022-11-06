@@ -51,6 +51,7 @@ class Timer {
             const deltaTime = startTime - currentTime;
             const time = this.convertMs(deltaTime);
             this.onTick(time);
+            console.log(this.days.value)
         },1000);
     }
     addLeadingZero(value){
