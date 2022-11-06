@@ -10,6 +10,8 @@ function getRandomHexColor() {
 let changeBG = null;
 // console.log(refs.startBtn,refs.stopBtn)
 
+
+
 refs.startBtn.addEventListener('click', letChangeBgColor);
 refs.stopBtn.addEventListener('click', stopChangeBgColor);
 
@@ -22,6 +24,5 @@ function letChangeBgColor(){
 function stopChangeBgColor(){
     clearInterval(changeBG);
     refs.startBtn.removeAttribute('disabled');
-
 }
 
