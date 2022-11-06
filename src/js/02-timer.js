@@ -2,6 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import Notiflix from 'notiflix';
 
+document.body.style.backgroundColor = '#FFE4E1'
 const refs = {
     myInput : document.getElementById("datetime-picker"),
     startBtn : document.querySelector('button[data-start]'),
@@ -9,12 +10,7 @@ const refs = {
     hours : document.querySelector('[data-hours]'),
     minutes : document.querySelector('[data-minutes]'),
     seconds : document.querySelector('[data-seconds]'),
-    timerFace : document.querySelector('.timer')
 }
-refs.timerFace.style.display = 'flex';
-refs.timerFace.style.color = 'red';
-refs.timerFace.style.gap = '20px';
-refs.timerFace.style.fontSize = '30px';
 let DATE = null;
 
 const options = {

@@ -16,3 +16,52 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* timer */
+.datetime {
+display: flex;
+gap: 10px;
+font-size: 20px;
+justify-content: center;
+}
+.datetime > input {
+  font-size: 20px;
+  text-align: center;
+}
+.datetime > button{
+  font-size: 20px;
+  background-color: #BC8F8F ;
+  padding: 10px 30px;
+  text-align: center;
+  border-color: #BC8F8F;
+  border-radius: 10px;
+}
+.timer {
+  font-family: sans-serif;
+  color: #fff;
+  display: block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  margin: 30px;
+}
+
+.field {
+  padding: 10px;
+  border-radius: 3px;
+  background:  #BC8F8F;
+  display: inline-block;
+}
+
+.value{
+  padding: 15px;
+  border-radius: 3px;
+  background: #708090;
+  display: inline-block;
+}
+
+.label {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}
