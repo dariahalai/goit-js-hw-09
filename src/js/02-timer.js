@@ -47,6 +47,11 @@ class Timer {
        
             this.isActive = true;
             this.intervalId = setInterval(()=> {
+            if(startTime<= Date.now()){
+                clearInterval(this.intervalId);
+                Notiflix.Notify.info('Sale is over!');
+                return;
+    ``       }
             const currentTime = Date.now();
             const deltaTime = startTime - currentTime;
             const time = this.convertMs(deltaTime);
